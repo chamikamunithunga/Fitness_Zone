@@ -1,3 +1,8 @@
+
+
+
+
+
 <h1>Fitness Zone</h1>
 Welcome to Fitness Zone, the ultimate online hub where your fitness journey meets convenience and inspiration. Our mission is to empower you to achieve your health and wellness goals with ease and enthusiasm. Whether you're taking your first steps into fitness or you're a seasoned pro, Fitness Zone has something special for everyone.
 
