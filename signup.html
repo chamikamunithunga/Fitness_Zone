@@ -5,21 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fitness Zone</title>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="signup.css">
-  
+    <link rel="stylesheet" type="text/css" href="css/signup.css">
 </head>
-<body data-vide-bg="video-8">
-   
-
+<body data-vide-bg="img/signup.jpg">
     <div class="loginBox">
         <div class="glass">
-            <img src="logo.png" alt="Logo" class="logo">
-            <h2>Sign in Here</h2>
+            <img src="img/logo/logo.png" alt="Logo" class="logo">
+            <h2>SignUp here</h2>
             <form>
+                <div class="social-buttons">
+                    <button class="social-button google-button">
+                        <img src="img/logo/icon.png" alt="Google Logo">
+                        Sign in with Google
+                    </button>
+                    <button class="social-button facebook-button">
+                        <img src="img/logo/icon2.png" alt="Facebook Logo">
+                        Sign in with Facebook
+                    </button>
+                </div>
+                
+                <h3 class="h3">___________________ OR ___________________</h3>
+                
+                
+                
+                <!-- Gender Selection -->
                 <div class="inputBox">
                     <input type="text" name="username" placeholder="Username">
                     <span><i class="fa fa-user"></i></span>
                 </div>
+                
+                <div class="gender-selection">
+                    <label>
+                        <input type="radio" name="gender" value="male" checked>
+                        Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female">
+                        Female
+                    </label>
+                </div>
+                
+                
                 <div class="inputBox">
                     <input type="email" name="email" placeholder=" Email">
                     <span><i class="fa fa-envelope"></i></span>
@@ -32,28 +58,31 @@
                     <input type="password" name="confirm_password" placeholder="Confirm Password">
                     <span><i class="fa fa-lock"></i></span>
                 </div>
-                <input type="submit" name="" value="Login">
+                <input type="submit" name="" value="SignUp">
             </form>
-            <a href="#" class="a">Forget Password</a>
+            <h4 class="a">Already have an account? <a href="login.html">Login</a></h4>
+
+
             
             <ul>
                 <li>
-                    <a href="https://www.facebook.com/p/Fitness-Zone-Panadura-100063279801385/"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/p/Fitness-Zone-Panadura-100063279801385/" class="facebook-icon"><i class="fa fa-facebook"></i></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/fitness_zone_panadura_/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/fitness_zone_panadura_/" class="instagram-icon"><i class="fa fa-instagram"></i></a>
                 </li>
                 <li>
-                    <a href="https://wa.me/94769145792"><i class="fa fa-whatsapp"></i></a>
+                    <a href="https://wa.me/94769145792" class="whatsapp-icon"><i class="fa fa-whatsapp"></i></a>
                 </li>
             </ul>
-            <h4>Create account? <a href="#">Sign Up</a></h4>
+            
+            
         </div>
-        <a href="/Users/chamikamunithunga/Desktop/gym-main/index.html" class="back-button">
+        <a href="index.html" class="back-button">
             <i class="fa fa-arrow-left"></i> Back
         </a>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-    <script src="jquery.vide.js"></script>
+    <script src="js/jquery.vide.js"></script>
 </body>
 </html>
