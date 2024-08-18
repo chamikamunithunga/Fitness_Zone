@@ -1,0 +1,392 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #000;
+	font-family: sans-serif;
+}
+
+.loginBox {
+	position: relative;
+	width: 90%;
+	max-width: 700px;
+	max-height: 90%;
+	box-sizing: border-box;
+	background: transparent;
+	box-shadow: 0 10px 20px #00000000;
+	border-radius: 10px;
+	text-align: center;
+	overflow: hidden; 
+	padding: 20px;
+}
+
+.back-button {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	font-size: 20px;
+	background: #353210;
+	border: 1px solid #d7c928;
+	border-radius: 5px;
+	padding: 10px;
+	cursor: pointer;
+	text-decoration: none;
+	color: #ffea00;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.back-button:hover {
+	background: #ffea00;
+	color: #000;
+}
+
+.glass {
+	width: 100%;
+	height: 100%;
+	padding: 50px; 
+	box-sizing: border-box;
+	background: #ffea003a;
+	border-radius: 5px;
+	border: 2px solid #ffc400;
+	position: relative;
+	overflow-y: auto; 
+}
+
+.logo {
+	width: 100%;
+	max-width: 300px; 
+	display: block;
+	margin: 0 auto 20px; 
+	height: auto;
+}
+
+h2 {
+	margin: 0;
+	padding: 0 0 10px; 
+	color: #000000;
+	text-align: center;
+	font-family: 'bold';
+}
+
+.loginBox input {
+	width: 100%;
+	margin-bottom: 10px; 
+	position: relative;
+	border: none;
+	border-bottom: 2px solid #ffffff;
+	outline: none;
+	height: 35px;
+	color: #ffffff;
+	background: transparent;
+	font-size: 14px;
+	padding-left: 15px;
+	box-sizing: border-box;
+}
+
+::placeholder {
+	color: #ffea00;
+}
+
+.inputBox {
+	position: relative;
+}
+
+.inputBox span {
+	position: absolute;
+	top: 8px;
+	color: #ffffff;
+	left: 0;
+}
+
+.loginBox input[type="submit"] {
+	border: none;
+	outline: none;
+	height: 35px;
+	font-size: 14px;
+	background: #ffea00;
+	color: #000000;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+.loginBox input[type="submit"]:hover {
+	background: #d22525;
+	color: #ffea00;
+	transform: scale(1.0);
+}
+
+.loginBox .a {
+	color: #ffffff;
+	font-size: 12px;
+	font-weight: bold;
+	text-decoration: none;
+	display: block;
+}
+
+.loginBox h5 {
+	margin: 0;
+	padding: 10px 0 0 0;
+	text-align: center;
+	color: #ffffff;
+}
+
+.loginBox h2 {
+    margin: 0;
+    padding: 0 0 10px;
+    color: #000000;
+    text-align: center;
+    font-family: 'bold';
+    font-size: 36px; 
+    line-height: 1.2; 
+}
+
+
+.loginBox h2 a {
+	text-decoration: none;
+	color: #ffea00;
+}
+
+
+
+.social-buttons {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.social-button {
+	border: none;
+	padding: 5px;
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 5px;
+	width: 48%; 
+}
+
+.social-button:hover {
+	background-color: #d22525;
+	transform: scale(1.05);
+	color: #fff;
+}
+
+.google-button {
+	background-color: #4285F4;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.facebook-button {
+	background-color: #3b5998;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.social-button img {
+	width: 30px; 
+	margin-right: 10px; 
+}
+
+@media (max-width: 768px) {
+	.loginBox {
+		width: 95%;
+		max-width: 95%;
+		height: auto;
+		padding: 20px;
+	}
+	.social-buttons {
+		flex-direction: column;
+	}
+	.social-button {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	.social-button:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.gender-selection {
+	display: flex;
+	margin-bottom: 10px; 
+	color: #ffea00;
+}
+
+.gender-selection label {
+	margin: 0 0px; 
+	font-size: 14px;
+	cursor: pointer;
+	display: flex;
+	align-items: left;
+}
+
+.gender-selection input[type="radio"] {
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+@media (max-width: 768px) {
+	.gender-selection {
+		justify-content: space-around;
+	}
+}
+
+
+.offcanvas-menu-overlay {
+	position: fixed;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 999;
+	height: 100%;
+	width: 100%;
+	visibility: hidden;
+}
+
+.offcanvas-menu-overlay.active {
+	visibility: visible;
+}
+
+.canvas-open {
+	position: absolute;
+	right: 40px;
+	top: 61px;
+	font-size: 22px;
+	width: 30px;
+	height: 30px;
+	color: #ffffff;
+	border: 1px solid #ffffff;
+	border-radius: 2px;
+	line-height: 29px;
+	text-align: center;
+	z-index: 1;
+	display: block;
+	cursor: pointer;
+}
+
+.offcanvas-menu-wrapper {
+	position: fixed;
+	left: -300px;
+	top: 0;
+	width: 300px;
+	z-index: 999;
+	background: #ffffff;
+	overflow-y: auto;
+	height: 100%;
+	opacity: 0;
+	visibility: hidden;
+	padding: 50px 30px 30px 30px;
+	display: block;
+}
+
+.offcanvas-menu-wrapper.show-offcanvas-menu-wrapper {
+	left: 0;
+	opacity: 1;
+	visibility: visible;
+}
+
+.offcanvas-menu-wrapper .canvas-close {
+	font-size: 22px;
+	width: 30px;
+	height: 30px;
+	border: 1px solid #151515;
+	border-radius: 2px;
+	text-align: center;
+	line-height: 27px;
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	cursor: pointer;
+}
+
+
+/*   social media icons */
+
+ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+ul li {
+	list-style: none;
+	margin: 0 10px; 
+}
+
+ul li a {
+	position: relative;
+	display: block;
+	width: 50px; 
+	height: 50px; 
+	background: transparent;
+	text-align: center;
+	line-height: 50px; 
+	border-radius: 50%; 
+	transition: background-color 0.3s, box-shadow 0.3s; 
+}
+
+ul li a .fa {
+	font-size: 24px; 
+	color: #000000; 
+	line-height: 50px;
+}
+
+
+ul li a.facebook-icon .fa {
+	color: #0051ff; 
+}
+
+ul li a.instagram-icon .fa {
+	color: #ff0055; 
+}
+
+ul li a.whatsapp-icon .fa {
+	color: #00ff5e; 
+}
+
+
+ul li a:hover {
+	background-color: #000000c8;
+	box-shadow: 0 0 10px #0000004d; 
+}
+
+
+ul li a {
+	text-decoration: none;
+}
+
+
+
+
+
+/*  "Already have an account?"  */
+.a {
+    font-size: 34px;
+    font-weight: normal;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 20px;
+    display: block;
+}
+
+.a a {
+    color: #ffea00;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
+.a a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
